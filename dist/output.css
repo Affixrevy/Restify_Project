@@ -581,6 +581,14 @@ video {
   width: auto;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
 .max-w-xs {
   max-width: 20rem;
 }
@@ -615,6 +623,10 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -766,6 +778,11 @@ video {
 .text-HYPERLINK_COLOR {
   --tw-text-opacity: 1;
   color: rgb(140 200 250 / var(--tw-text-opacity));
+}
+
+.text-FONT_COLOR_1 {
+  --tw-text-opacity: 1;
+  color: rgb(232 236 239 / var(--tw-text-opacity));
 }
 
 .shadow-md {

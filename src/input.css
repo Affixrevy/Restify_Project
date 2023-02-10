@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Restify_logo {
+    font-size: 2rem;
+    font-family: "Exo 2", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    left: 89px;
+    z-index: 1;
+}

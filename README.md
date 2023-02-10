@@ -3,21 +3,21 @@
 ## Pages To add
 
 -[ ] Main page
-    -[ ] Property Listings
-    -[ ] Search
+    -[x] Property Listings
+    -[x] Search
     -[ ] Filtering
 -[ ] Property Page
-    -[ ] User end
+    -[x] User end
         -[ ] Book the property
     -[ ] Owner end
         -[ ] Create/Update property
     -[ ] Shared
-        -[ ] Comment
-        -[ ] View Property
+        -[x] Comment
+        -[x] View Property
 -[ ] My Account (account management)
     -[ ] My profile
     -[ ] My comments...
--[ ] Log-in/log-out
--[ ] Reservations page (linked from account)
+    -[ ] Reservations page (linked from account)
+-[x] Log-in/log-out
 -[ ] Notifs in navbar
     -[ ] Upcoming bookings

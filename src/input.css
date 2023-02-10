@@ -62,7 +62,6 @@
   /* Container for image text */
   .caption-container {
     text-align: center;
-    background-color: #222;
     padding: 2px 16px;
     color: white;
   }
@@ -88,3 +87,14 @@
   .demo:hover {
     opacity: 1;
   }
+
+.Restify_logo {
+    font-size: 2rem;
+    font-family: "Exo 2", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    left: 89px;
+    z-index: 1;
+}

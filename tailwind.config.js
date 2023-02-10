@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         BACKGROUND_COLOR_1: 'rgb(48, 45, 49)',
         BACKGROUND_COLOR_2: 'rgb(53, 55, 57)',
-        POPUP_BACKGROUND_COLOR: 'rgb(50,50,55)',
+        POPUP_BACKGROUND_COLOR: 'rgb(50, 50, 55)',
         ACCENT_COLOR: 'rgb(31, 128, 235)',
         FONT_COLOR_1: 'rgb(232, 236, 239)',
         FONT_COLOR_2: 'rgb(185, 190, 193)',

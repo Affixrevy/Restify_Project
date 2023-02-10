@@ -98,3 +98,7 @@
     left: 89px;
     z-index: 1;
 }
+
+.indicator{
+  transition: left .4s;
+}

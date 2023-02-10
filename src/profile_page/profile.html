@@ -90,7 +90,7 @@
             <div
                     role="tablist"
                     aria-label="tabs"
-                    class="relative mx-auto h-12 grid grid-cols-3 items-center px-[3px] rounded-2xl bg-BACKGROUND_COLOR_2 overflow-hidden shadow-2xl shadow-900/20 transition"
+                    class="relative mx-auto h-12 grid grid-cols-4 items-center px-[3px] rounded-2xl bg-BACKGROUND_COLOR_2 overflow-hidden shadow-2xl shadow-900/20 transition"
             >
                 <div
                         class="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-2xl bg-ACCENT_COLOR shadow-md"
@@ -103,7 +103,7 @@
                         tabindex="0"
                         class="relative block h-10 px-6 tab rounded-2xl"
                 >
-                    <span class="text-FONT_COLOR_1">First Tab</span>
+                    <span class="text-FONT_COLOR_1">My Profile</span>
                 </button>
                 <button
                         role="tab"
@@ -113,7 +113,7 @@
                         tabindex="-1"
                         class="relative block h-10 px-6 tab rounded-2xl"
                 >
-                    <span class="text-FONT_COLOR_1">Second Tab</span>
+                    <span class="text-FONT_COLOR_1">My Comments</span>
                 </button>
                 <button
                         role="tab"
@@ -123,24 +123,101 @@
                         tabindex="-1"
                         class="relative block h-10 px-6 tab rounded-2xl"
                 >
-                    <span class="text-FONT_COLOR_1">Third Tab</span>
+                    <span class="text-FONT_COLOR_1">My Bookings</span>
+                </button>
+                <button
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="panel-4"
+                        id="tab-4"
+                        tabindex="-1"
+                        class="relative block h-10 px-6 tab rounded-2xl"
+                >
+                    <span class="text-FONT_COLOR_1">My Listings</span>
                 </button>
             </div>
             <div class="mt-6 relative rounded-2xl bg-BACKGROUND_COLOR_2">
                 <div
                         role="tabpanel"
                         id="panel-1"
-                        class="tab-panel p-6 transition duration-300"
+                        class="tab-panel p-6 transition duration-300 flex flex-col space-y-4 divide-y-2"
                 >
-                    <h2 class="text-xl font-semibold text-FONT_COLOR_1">
-                        First tab panel
+                  <div class="flex flex-col space-y-4">
+                    <h2 class="text-xl font-semibold text-FONT_COLOR_1 mb-2">
+                        Profile
                     </h2>
-                    <p class="mt-4 text-FONT_COLOR_2">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        dolores voluptate temporibus, atque ab eos, delectus at ad hic
-                        voluptatem veritatis iure, nulla voluptates quod nobis
-                        doloremque eaque! Perferendis, soluta.
-                    </p>
+                    <div class="w-20 h-20 bg-BACKGROUND_COLOR_2 relative">
+                      <a href="../profile_page/profile.html"
+                      class=" rounded-full w-20 h-20 pt-3 z-40" style="background-color: url(../../assets/img/account.png);">
+                        <img
+                            src="../../assets/img/account.png" class="object-fill" alt="Account Icon">
+                        <div class="flex absolute top-0 left-0 w-20 h-20 z-50 justify-center items-center text-FONT_COLOR_1 bg-BACKGROUND_COLOR_2 opacity-0 hover:transition-opacity hover:opacity-50">
+                            <div>
+                              Edit
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="flex flex-row mt-4 text-FONT_COLOR_2 h-fit">
+                        <div class="flex flex-col space-y-2 w-1/2">
+                          <p>
+                            First Name:
+                          </p>
+                          <p>
+                            Last Name:
+                          </p>
+                          <p>
+                            Date of Birth:
+                          </p>
+                        </div>
+                        <div class="flex flex-col space-y-2 relative">
+                          <p>
+                            Potato
+                          </p>
+                          <p>
+                            Tomato
+                          </p>
+                          <p>
+                            2002-04-13
+                          </p>
+                        </div>
+                    </div>
+                    <button class="bg-BUTTON_COLOR hover:bg-STROKE_COLOR text-FONT_COLOR_1 w-20 font-bold rounded-full">
+                      <a href="edit_profile.html" class="block overflow-auto">Edit</a>
+                    </button>
+                  </div>
+                  <div class="text-FONT_COLOR_2 flex flex-col space-y-4">
+                    <div class="flex flex-row mt-4 text-FONT_COLOR_2 h-fit">
+                      <div class="flex flex-col space-y-2 w-1/2">
+                        <p>
+                          Email:
+                        </p>
+                        <button class="bg-BUTTON_COLOR hover:bg-STROKE_COLOR text-FONT_COLOR_1 w-20 font-bold rounded-full">
+                          <a href="edit_profile.html" class="block overflow-auto">Edit</a>
+                        </button>
+                        <p>
+                          Password:
+                        </p>
+                        <button class="bg-BUTTON_COLOR hover:bg-STROKE_COLOR text-FONT_COLOR_1 w-20 font-bold rounded-full">
+                          <a href="edit_profile.html" class="block overflow-auto">Edit</a>
+                        </button>
+                      </div>
+                      <div class="flex flex-col space-y-2 relative">
+                        <p>
+                          t***o@mayo.com
+                        </p>
+                        <button class="opacity-0 bg-BUTTON_COLOR hover:bg-STROKE_COLOR text-FONT_COLOR_1 w-20 font-bold rounded-full cursor-default">
+                          Edit
+                        </button>
+                        <p>
+                          *****
+                        </p>
+                        <button class="opacity-0 bg-BUTTON_COLOR hover:bg-STROKE_COLOR text-FONT_COLOR_1 w-20 font-bold rounded-full cursor-default">
+                          Edit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div
                         role="tabpanel"
@@ -148,13 +225,10 @@
                         class="absolute top-0 invisible opacity-0 tab-panel p-6 transition duration-300"
                 >
                     <h2 class="text-xl font-semibold text-FONT_COLOR_1">
-                        Second tab panel
+                        My Comments
                     </h2>
                     <p class="mt-4 text-FONT_COLOR_2">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        dolores voluptate temporibus, atque ab eos, delectus at ad hic
-                        voluptatem veritatis iure, nulla voluptates quod nobis
-                        doloremque eaque! Perferendis, soluta.
+                        No Comments
                     </p>
                 </div>
                 <div
@@ -163,14 +237,23 @@
                         class="absolute top-0 invisible opacity-0 tab-panel p-6 transition duration-300"
                 >
                     <h2 class="text-xl font-semibold text-FONT_COLOR_1">
-                        Third tab panel
+                        My Bookings
                     </h2>
                     <p class="mt-4 text-FONT_COLOR_2">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        dolores voluptate temporibus, atque ab eos, delectus at ad hic
-                        voluptatem veritatis iure, nulla voluptates quod nobis
-                        doloremque eaque! Perferendis, soluta.
+                        No Bookings
                     </p>
+                </div>
+                <div
+                        role="tabpanel"
+                        id="panel-4"
+                        class="absolute top-0 invisible opacity-0 tab-panel p-6 transition duration-300"
+                >
+                  <h2 class="text-xl font-semibold text-FONT_COLOR_1">
+                    My Listings
+                  </h2>
+                  <p class="mt-4 text-FONT_COLOR_2">
+                    This tab is for owners of listings. Create your listing today to become an owner!
+                  </p>
                 </div>
             </div>
         </div>

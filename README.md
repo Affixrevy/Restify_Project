@@ -15,7 +15,7 @@
         -[x] Comment
         -[x] View Property
 -[ ] My Account (account management)
-    -[ ] My profile
+    -[x] My profile
     -[ ] My comments...
     -[ ] Reservations page (linked from account)
 -[x] Log-in/log-out

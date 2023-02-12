@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../../dist/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/png" href="../../assets/img/favicon.png" />
 
     <!--  TODO: SCRIPT for NOTIF dropdown  -->
     <script
@@ -20,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png" />
   </head>
 
   <body class="bg-BACKGROUND_COLOR_1">
@@ -307,20 +307,16 @@
           <div
             class="flex xl:justify-top xl:items-center xl:text-center text-left xl:pl-0 pl-4 flex-col"
           >
-            <h1 class="pt-3 text-FONT_COLOR_2 text-2xl dark:text-FONT_COLOR_1">
-              <b>$110 CAD</b> night
-            </h1>
-            <h1 class="tracking-tight text-FONT_COLOR_2 dark:text-FONT_COLOR_1">
-              Total $330 CAD
-            </h1>
-            <a href="../resservation/reservation_page.html">
-              <button
-                class="bg-BUTTON_COLOR hover:bg-STROKE_COLOR text-FONT_COLOR_1 w-48 font-bold py-2 px-4 my-5 rounded-full"
-                href="../resservation/reservation_page.html"
-              >
-                Reserve
-              </button>
-            </a>
+            <button
+              class="bg-BUTTON_COLOR hover:bg-STROKE_COLOR text-FONT_COLOR_1 w-48 font-bold py-2 px-4 my-5 rounded-full"
+            >
+              Edit
+            </button>
+            <button
+              class="bg-BUTTON_COLOR hover:bg-STROKE_COLOR text-FONT_COLOR_1 w-48 font-bold py-2 px-4 my-5 rounded-full"
+            >
+              Add information
+            </button>
           </div>
         </div>
       </div>
@@ -367,11 +363,18 @@
         <div
           class="flex flex-col justify-between items-left text-left p-4 leading-normal"
         >
-          <h5
-            class="mb-4 text-5xl font-bold tracking-tight dark:text-FONT_COLOR_1"
-          >
-            Comments
-          </h5>
+        <div class="flex grid grid-cols-6">
+            <h5
+              class="mb-4 text-5xl font-bold tracking-tight dark:text-FONT_COLOR_1 col-span-5"
+            >
+              Comments
+            </h5>
+            <button
+              class="bg-BUTTON_COLOR hover:bg-STROKE_COLOR text-FONT_COLOR_1 w-48 font-bold py-2 px-4 my-5 rounded-full"
+            >
+              Add comments
+            </button>
+        </div>
           <div
             class="rounded-2xl bg-STROKE_COLOR justify-center items-center mb-4"
           >

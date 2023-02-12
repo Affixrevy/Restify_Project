@@ -2,13 +2,13 @@
 
 ## Pages To add
 
--[ ] Main page
+-[x] Main page
     -[x] Property Listings
     -[x] Search
-    -[ ] Filtering
--[ ] Property Page
+    -[x] Filtering
+-[x] Property Page
     -[x] User end
-        -[ ] Book the property
+        -[x] Book the property
     -[x] Owner end
         -[x] Create/Update property
     -[x] Shared

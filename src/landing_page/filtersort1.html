@@ -124,13 +124,54 @@
 <!-- Main Content - Search Listings -->
 <main class="flex justify-center lg:mt-16 py-5 mx-auto w-full">
     <div class="w-11/12 md:w-2/3">
+        <div class="py-4">
+            <div
+                    role="tablist"
+                    aria-label="tabs"
+                    class="relative mx-auto h-12 grid grid-cols-3 items-center px-[3px] rounded-2xl bg-BACKGROUND_COLOR_2 overflow-hidden shadow-2xl shadow-900/20 transition"
+            >
+                <div
+                        class="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-2xl bg-ACCENT_COLOR shadow-md"
+                ></div>
+                <button
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="panel-1"
+                        id="tab-1"
+                        tabindex="0"
+                        class="relative block h-10 px-6 tab rounded-2xl"
+                >
+                    <span class="text-FONT_COLOR_1">Most Popular</span>
+                </button>
+                <button
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="panel-2"
+                        id="tab-2"
+                        tabindex="1"
+                        class="relative block h-10 px-6 tab rounded-2xl bg-ACCENT_COLOR"
+                >
+                    <span class="text-FONT_COLOR_1">Price</span>
+                </button>
+                <button
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="panel-3"
+                        id="tab-3"
+                        tabindex="2"
+                        class="relative block h-10 px-6 tab rounded-2xl"
+                >
+                    <span class="text-FONT_COLOR_1">Rating</span>
+                </button>
+            </div>
+        </div>
         <div class="grid lg:grid-cols-2 gap-4 w-full">
             <a href="../property_page/property_user.html"
                class="flex flex-col items-start rounded-2xl shadow lg:flex-row lg:max-w-xl text-FONT_COLOR_2 hover:text-gray-700 hover:bg-gray-100 dark:bg-BACKGROUND_COLOR_2 dark:hover:bg-STROKE_COLOR">
                 <img class="object-cover w-full rounded-t-2xl h-96 lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-2xl"
                      src="../../assets/img/mansion/mansion.webp" alt="">
                 <div class="m-3 ml-4">
-                    <h1 class="text-2xl font-bold tracking-tight dark:text-FONT_COLOR_1">Bob's Mansion</h1>
+                    <h1 class="text-2xl font-bold tracking-tight dark:text-FONT_COLOR_1">Leslie's Mansion</h1>
                     <div class="flex py-2 mb-1">
                         <svg
                                 aria-hidden="true"
@@ -144,12 +185,12 @@
                                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                             ></path>
                         </svg>
-                        <p class="ml-0.5 text-sm font-bold text-current">4.92 / 5</p>
+                        <p class="ml-0.5 text-sm font-bold text-current">4.75 / 5</p>
                     </div>
                     <h1
                             class="pt-2 text-current dark:text-FONT_COLOR_1"
                     >
-                        <b>$142 CAD</b> night
+                        <b>$96 CAD</b> night
                     </h1>
                 </div>
             </a>
@@ -186,34 +227,6 @@
                 <img class="object-cover w-full rounded-t-2xl h-96 lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-2xl"
                      src="../../assets/img/mansion/mansion.webp" alt="">
                 <div class="m-3 ml-4">
-                    <h1 class="text-2xl font-bold tracking-tight dark:text-FONT_COLOR_1">Leslie's Mansion</h1>
-                    <div class="flex py-2 mb-1">
-                        <svg
-                                aria-hidden="true"
-                                class="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <title>Rating star</title>
-                            <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                            ></path>
-                        </svg>
-                        <p class="ml-0.5 text-sm font-bold text-current">4.75 / 5</p>
-                    </div>
-                    <h1
-                            class="pt-2 text-current dark:text-FONT_COLOR_1"
-                    >
-                        <b>$96 CAD</b> night
-                    </h1>
-                </div>
-            </a>
-            <a href="../property_page/property_user.html"
-               class="flex flex-col items-start rounded-2xl shadow lg:flex-row lg:max-w-xl text-FONT_COLOR_2 hover:text-gray-700 hover:bg-gray-100 dark:bg-BACKGROUND_COLOR_2 dark:hover:bg-STROKE_COLOR">
-                <img class="object-cover w-full rounded-t-2xl h-96 lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-2xl"
-                     src="../../assets/img/mansion/mansion.webp" alt="">
-                <div class="m-3 ml-4">
                     <h1 class="text-2xl font-bold tracking-tight dark:text-FONT_COLOR_1">Rose's Mansion</h1>
                     <div class="flex py-2 mb-1">
                         <svg
@@ -234,6 +247,34 @@
                             class="pt-2 text-current dark:text-FONT_COLOR_1"
                     >
                         <b>$130 CAD</b> night
+                    </h1>
+                </div>
+            </a>
+            <a href="../property_page/property_user.html"
+               class="flex flex-col items-start rounded-2xl shadow lg:flex-row lg:max-w-xl text-FONT_COLOR_2 hover:text-gray-700 hover:bg-gray-100 dark:bg-BACKGROUND_COLOR_2 dark:hover:bg-STROKE_COLOR">
+                <img class="object-cover w-full rounded-t-2xl h-96 lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-2xl"
+                     src="../../assets/img/mansion/mansion.webp" alt="">
+                <div class="m-3 ml-4">
+                    <h1 class="text-2xl font-bold tracking-tight dark:text-FONT_COLOR_1">Bob's Mansion</h1>
+                    <div class="flex py-2 mb-1">
+                        <svg
+                                aria-hidden="true"
+                                class="w-5 h-5 text-yellow-400"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <title>Rating star</title>
+                            <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                            ></path>
+                        </svg>
+                        <p class="ml-0.5 text-sm font-bold text-current">4.92 / 5</p>
+                    </div>
+                    <h1
+                            class="pt-2 text-current dark:text-FONT_COLOR_1"
+                    >
+                        <b>$142 CAD</b> night
                     </h1>
                 </div>
             </a>
